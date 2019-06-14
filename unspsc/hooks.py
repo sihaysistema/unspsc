@@ -11,7 +11,15 @@ app_color = "#0e63aa"
 app_email = "m.monroyc22@gmail.com"
 app_license = "MIT"
 
-fixtures = ["Item Group"]
+# fixtures = ["Item Group"]
+fixtures = [
+     {
+         "doctype": "Item Group",
+         "filters": [
+             ["item_group_name", "not in", ("All Item Groups")]
+             ]
+     }]
+
 # Includes in <head>
 # ------------------
 
